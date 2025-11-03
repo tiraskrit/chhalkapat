@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Shuffle, Users, Eye, EyeOff } from 'lucide-react';
+import WORD_LIST from './data/words.json';
 
-// Sample words - can be loaded from JSON
-const WORD_LIST = [
-  "Pizza", "Banana", "Guitar", "Ocean", "Mountain", "Coffee", "Dragon",
-  "Rainbow", "Sunset", "Castle", "Robot", "Unicorn", "Rocket", "Diamond",
-  "Thunder", "Butterfly", "Volcano", "Galaxy", "Treasure", "Wizard",
-  "Phoenix", "Carnival", "Compass", "Lighthouse", "Orchestra", "Pyramid"
-];
+// // Sample words - can be loaded from JSON
+// const WORD_LIST = [
+//   "Pizza", "Banana", "Guitar", "Ocean", "Mountain", "Coffee", "Dragon",
+//   "Rainbow", "Sunset", "Castle", "Robot", "Unicorn", "Rocket", "Diamond",
+//   "Thunder", "Butterfly", "Volcano", "Galaxy", "Treasure", "Wizard",
+//   "Phoenix", "Carnival", "Compass", "Lighthouse", "Orchestra", "Pyramid"
+// ];
 
 const ChhalKapat = () => {
   const [gameState, setGameState] = useState('setup'); // setup, revealing, started
@@ -84,7 +85,7 @@ const ChhalKapat = () => {
       <div className="min-h-screen bg-gradient-to-br from-purple-600 via-pink-500 to-red-500 flex items-center justify-center p-4">
         <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-md w-full">
           <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-gray-800 mb-2">ChhalKapat</h1>
+            <h1 className="text-4xl font-bold text-gray-800 mb-2">छलकपट</h1>
             <p className="text-gray-600">Find the imposter among you!</p>
           </div>
 
