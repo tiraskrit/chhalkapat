@@ -84,9 +84,14 @@ const ChhalKapat = () => {
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-600 via-pink-500 to-red-500 flex items-center justify-center p-4">
         <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-md w-full">
-          <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-gray-800 mb-2">छलकपट</h1>
-            <p className="text-gray-600">Find the imposter among you!</p>
+          <div className="text-center mb-8 bg-gradient-to-br">
+            {/* <h1 className="text-4xl font-bold text-gray-800 mb-2">छलकपट</h1> */}
+            <img 
+              src="/logo.png" 
+              alt="छलकपट" 
+              className="h-24 mx-auto mb-2"
+            />
+            <p className="text-gray-800">Find the imposter among you!</p>
           </div>
 
           <div className="space-y-6">
